@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import Chooser from "./components/Chooser";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello there</h1>
+      <h2>This app allows you to simulate various physical throws using chart.js.</h2>
+      <h2>Choose your options below, click the button and let the magic happen.</h2>
+      <Chooser/>
     </div>
   );
 }
