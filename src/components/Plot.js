@@ -26,7 +26,7 @@ function Plot({angle, speed}) {
      * updates plot's arrays.
      */
     plot.data.datasets[0].data.push((speed * time * Math.sin(angle)) - ((g * time * time) / 2));
-    plot.data.labels.push(speed * time * Math.cos(angle));
+    plot.data.labels.push((speed * time * Math.cos(angle)).toFixed(2));
     plot.update();
   }
 
